@@ -8,7 +8,7 @@ import {
 import { HashLink } from 'react-router-hash-link';
 
 type Props = {
-  morePage: boolean;
+  morePage?: boolean;
 };
 
 export const Footer: React.FC<Props> = ({ morePage }) => {
