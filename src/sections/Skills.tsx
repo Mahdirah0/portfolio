@@ -7,7 +7,6 @@ export const Skills = () => {
     'React',
     'Tailwind',
     'NodeJS',
-    'Api',
     'Express',
     'PostgreSQL',
     'Mongoose',
@@ -16,11 +15,13 @@ export const Skills = () => {
     'Apollo',
   ];
   return (
-    <div className='w-[1600px] m-auto flex flex-col items-center mb-32'>
-      <h1 className='mb-14 text-5xl font-bold'>Skills</h1>
-      <div className='flex-wrap'>
+    <div className='flex flex-col items-center py-32 bg-neutral-100'>
+      <h1 className='mb-4 text-4xl font-semibold text-center'>
+        Technologies and Tools
+      </h1>
+      <div className='flex-wrap flex justify-center p-4'>
         {mySkills.map((skills) => (
-          <button className='mr-3 my-3 btn no-animation btn-md'>
+          <button className='mr-3 my-3 btn no-animation btn-md bg-neutral-200 shadow-md'>
             {skills}
           </button>
         ))}

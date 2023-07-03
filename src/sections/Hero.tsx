@@ -19,21 +19,20 @@ export const Hero = () => {
       <div className='hero-overlay bg-opacity-60'></div>
       <div className='hero-content text-center text-neutral-content'>
         <div className='max-w-md'>
-          <h1 className='mb-5 text-5xl font-bold'>
-            Hello there, I'm Mahdi Rahman
-          </h1>
+          <h1 className='mb-5 text-5xl font-semibold'>Hi there, I'm Mahdi</h1>
+          <p className='mb-5 text-2xl'>Software Developer</p>
           <div className='flex items-center justify-center'>
-            <button className='btn btn-neutral sm:btn-sm md:btn-md'>
+            <button className='btn btn-neutral'>
               <Link to={linkedInUrl} target='_blank'>
                 <IconBrandLinkedin />
               </Link>
             </button>
-            <button className='btn btn-neutral mx-3 sm:btn-sm md:btn-md'>
+            <button className='btn btn-neutral mx-3'>
               <Link to={githubUrl} target='_blank'>
                 <IconBrandGithub />
               </Link>
             </button>
-            <button className='btn btn-neutral sm:btn-sm md:btn-md'>
+            <button className='btn btn-neutral'>
               <IconFileCv />
             </button>
           </div>

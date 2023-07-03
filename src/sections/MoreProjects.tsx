@@ -5,27 +5,32 @@ import { Footer } from './Footer';
 
 export const MoreProject = () => {
   return (
-    <div>
+    <div className='relative min-h-screen'>
       <Header />
-      <div className='w-[1600px] m-auto mt-20 grid gap-8 grid-cols-4 grid-rows-4'>
+      <div className='flex flex-wrap justify-center pb-52 pt-10'>
         {ProjectData.map((item) => (
-          <div className='card w-96 bg-base-100 shadow-xl'>
+          <div className='card w-80 bg-base-100 shadow-xl m-5 lg:w-96'>
             <figure>
               <img src={`/images/${item.img}`} alt={item.name} />
             </figure>
             <div className='card-body'>
-              <h2 className='card-title'>{item.name}</h2>
-              <div className='flex'>
-                {item.tech.map((tech) => (
-                  <h1 className='mr-3'>{tech}</h1>
-                ))}
+              <div className='uppercase tracking-wide text-sm text-indigo-500 font-semibold'>
+                {item.name}
+              </div>
+              <div>
+                <span className=''>Tech stack:</span>
+                <div className='flex flex-wrap'>
+                  {item.tech.map((tech) => (
+                    <span className='badge badge-ghost mr-2 my-2'>{tech}</span>
+                  ))}
+                </div>
               </div>
               <div className='card-actions'>
                 <div className='mt-5'>
-                  <button className='btn btn-neutral btn-sm'>
+                  <button className='btn btn-outline btn-xs sm:btn-sm'>
                     <Link to={item.sourceCodeUrl}>Source Code</Link>
                   </button>
-                  <button className='btn btn-neutral btn-sm mx-3'>
+                  <button className='btn btn-neutral btn-xs mx-3 sm:btn-sm'>
                     <Link to={item.url}>Visit Website</Link>
                   </button>
                 </div>
@@ -34,7 +39,7 @@ export const MoreProject = () => {
           </div>
         ))}
       </div>
-      <Footer />
+      <Footer morePage={true} />
     </div>
   );
 };

@@ -32,6 +32,14 @@ export const ProjectData = [
     url: 'https://traveler-website.netlify.app/',
     sourceCodeUrl: 'https://github.com/Mahdirah0/traveler',
   },
+  {
+    name: 'Traveler Website',
+    img: 'travel.png',
+    tech: ['HTML', 'CSS', 'Javascript', 'Responsive'],
+    description: '',
+    url: 'https://traveler-website.netlify.app/',
+    sourceCodeUrl: 'https://github.com/Mahdirah0/traveler',
+  },
   // {
   //   name: 'Chess',
   //   img: '',

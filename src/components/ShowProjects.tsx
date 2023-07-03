@@ -18,33 +18,38 @@ export const ShowProjects: React.FC<Props> = ({
   url,
 }) => {
   return (
-    <div className='flex mb-16'>
-      <div className='w-[700px] drop-shadow-lg'>
-        <img
-          src={`/images/${img}`}
-          className='w-[700px] h-[400px] rounded-md'
-          alt={name}
-        />
-      </div>
-      <div className='mx-52'>
-        <div className='w-[500px]'>
-          <h1 className='text-3xl font-bold mb-5'>{name}</h1>
-          <p className='prose mb-1'>{description}</p>
-          <div className='mt-2'>
-            <p className='mb-3'>Stack used:</p>
+    <div className='max-w-[300px] sm:max-w-md mx-auto mb-24 bg-white rounded-xl shadow-md md:mx-2 md:max-w-4xl 2xl:min-w-[66rem]'>
+      <div className='md:flex'>
+        <div className='md:shrink-0'>
+          <img
+            className='h-56 w-full object-fill rounded-t-md md:rounded-l-md md:rounded-r-none md:h-full md:w-96 2xl:min-w-[30rem]'
+            src={`/images/${img}`}
+            alt={name}
+          />
+        </div>
+        <div className='p-8 2xl:px-14'>
+          <div className='uppercase tracking-wide text-sm text-indigo-500 font-semibold'>
+            {name}
+          </div>
+          {/* <h1 className='uppercase tracking-wide font-semibold text-2xl mb-5'>
+            {name}
+          </h1> */}
+          <p className='mt-2 text-slate-500'>{description}</p>
+          <div className='mt-2 '>
+            <span className=''>Tech stack:</span>
             <div>
-              {tech.map((item) => (
-                <h1 className='mr-3 btn no-animation btn-sm'>{item}</h1>
+              {tech.map((tech) => (
+                <span className='badge badge-ghost mr-2 my-2'>{tech}</span>
               ))}
             </div>
           </div>
-          <div className='mt-7'>
-            <button className='btn btn-neutral btn-sm'>
+          <div className='mt-14'>
+            <button className='btn btn-outline btn-xs sm:btn-sm'>
               <Link to={sourceUrl} target='_blank'>
                 Source Code
               </Link>
             </button>
-            <button className='btn btn-neutral btn-sm mx-3'>
+            <button className='btn btn-neutral btn-xs ml-2 sm:btn-sm'>
               <Link to={url} target='_blank'>
                 Visit Website
               </Link>
