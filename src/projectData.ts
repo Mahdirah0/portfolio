@@ -1,5 +1,23 @@
 export const ProjectData = [
   {
+    name: 'Movie Website',
+    img: 'movie.png',
+    tech: ['ReactJS', 'Responsive', 'Javascript', 'API'],
+    description:
+      'A web application created with ReactJS showcasing popular movies and series using MovieDB API.',
+    url: 'https://movie-website-app.netlify.app/',
+    sourceCodeUrl: 'https://github.com/Mahdirah0/Movie-App',
+  },
+  {
+    name: 'A* Visualizer',
+    img: 'pathfinding.png',
+    tech: ['HTML', 'CSS', 'Javascript'],
+    description:
+      'Finds the shortest path using A* algorithm, visualized using React',
+    url: 'https://mahdirah0-chess.netlify.app/',
+    sourceCodeUrl: 'https://github.com/Mahdirah0/chess/',
+  },
+  {
     name: 'Explorer Website',
     img: 'explore.png',
     tech: ['HTML', 'CSS', 'Javascript', 'Responsive'],
@@ -16,15 +34,6 @@ export const ProjectData = [
     sourceCodeUrl: 'https://github.com/Mahdirah0/london',
   },
   {
-    name: 'Movie Website',
-    img: 'movie.png',
-    tech: ['ReactJS', 'Responsive', 'Javascript', 'API'],
-    description:
-      'A web application created with ReactJS showcasing popular movies and series using MovieDB API.',
-    url: 'https://movie-website-app.netlify.app/',
-    sourceCodeUrl: 'https://github.com/Mahdirah0/Movie-App',
-  },
-  {
     name: 'Traveler Website',
     img: 'travel.png',
     tech: ['HTML', 'CSS', 'Javascript', 'Responsive'],
@@ -33,27 +42,27 @@ export const ProjectData = [
     sourceCodeUrl: 'https://github.com/Mahdirah0/traveler',
   },
   {
-    name: 'Traveler Website',
-    img: 'travel.png',
+    name: 'Chess',
+    img: '',
+    tech: ['HTML', 'CSS', 'Javascript'],
+    description: '',
+    url: 'https://mahdirah0-chess.netlify.app/',
+    sourceCodeUrl: 'https://github.com/Mahdirah0/chess/',
+  },
+  {
+    name: 'Face Recognition',
+    img: '',
+    tech: ['HTML', 'CSS', 'Javascript'],
+    description: '',
+    url: 'https://mahdirah0-chess.netlify.app/',
+    sourceCodeUrl: 'https://github.com/Mahdirah0/chess/',
+  },
+  {
+    name: 'Restaurant Website',
+    img: 'restaurant.png',
     tech: ['HTML', 'CSS', 'Javascript', 'Responsive'],
     description: '',
-    url: 'https://traveler-website.netlify.app/',
-    sourceCodeUrl: 'https://github.com/Mahdirah0/traveler',
+    url: 'https://mahdirah0-chess.netlify.app/',
+    sourceCodeUrl: 'https://github.com/Mahdirah0/chess/',
   },
-  // {
-  //   name: 'Chess',
-  //   img: '',
-  //   tech: ['HTML', 'CSS', 'Javascript'],
-  //   description: '',
-  //   url: '',
-  //   sourceCodeUrl: '',
-  // },
-  // {
-  //   name: 'Reddit Clone',
-  //   img: '',
-  //   tech: ['React', 'GraphQL', 'PostgreSQL', 'Apollo Server', 'Apollo Client'],
-  //   description: '',
-  //   url: '',
-  //   sourceCodeUrl: '',
-  // },
 ];
