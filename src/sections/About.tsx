@@ -5,18 +5,13 @@ export const About = () => {
         id='about'
         className='flex flex-col justify-center items-center m-auto py-32'
       >
-        <h1 className='mb-5 text-4xl font-bold'>About</h1>
-        <p className='mx-4 prose lg:prose-xl text-justify'>
-          Hello! I'm Mahdi Rahman, a passionate and driven junior software
-          developer with a strong desire to contribute to the world of
-          technology. With a solid foundation in programming languages such as
-          Javascript, Python and Typescript, I thrive in problem-solving and
-          love the challenge of turning ideas into functional applications. I am
-          constantly seeking opportunities to learn and grow as a developer,
-          eager to collaborate with experienced professionals and make a
-          meaningful impact in the software development industry. I believe in
-          the power of innovation and teamwork, and I'm excited to be part of
-          projects that push boundaries and create innovative solutions.
+        <h1 className='mb-5 text-4xl font-bold'>About Me</h1>
+        <p className='mx-4 prose lg:prose-xl text-center'>
+          Passionate software developer skilled in JavaScript, Python, React,
+          and TypeScript. Strong problem-solving abilities and eager to turn
+          ideas into functional applications. Committed to continuous learning
+          and collaborative teamwork. Excited to make a meaningful impact in
+          software development.
         </p>
       </div>
     </div>

@@ -5,15 +5,17 @@ import {
   IconBrandGithub,
   IconFileCv,
 } from '@tabler/icons-react';
+import {
+  LINKED_IN_PROFILE_URL,
+  GITHUB_PROFILE_URL,
+  RESUME_URL,
+} from '../constants';
 
 const HeroStyles = {
   backgroundImage: `url(${bgImage})`,
 };
 
 export const Hero = () => {
-  const linkedInUrl = 'https://www.linkedin.com/in/mahdi-rahman-14383420a/';
-  const githubUrl = 'https://github.com/Mahdirah0';
-
   return (
     <div id='hero' className='hero h-[950px]' style={HeroStyles}>
       <div className='hero-overlay bg-opacity-60'></div>
@@ -22,19 +24,21 @@ export const Hero = () => {
           <h1 className='mb-5 text-5xl font-semibold'>Hi there, I'm Mahdi</h1>
           <p className='mb-5 text-2xl'>Software Developer</p>
           <div className='flex items-center justify-center'>
-            <button className='btn btn-neutral'>
-              <Link to={linkedInUrl} target='_blank'>
+            <Link to={LINKED_IN_PROFILE_URL} target='_blank'>
+              <button className='btn btn-neutral'>
                 <IconBrandLinkedin />
-              </Link>
-            </button>
-            <button className='btn btn-neutral mx-3'>
-              <Link to={githubUrl} target='_blank'>
+              </button>
+            </Link>
+            <Link to={GITHUB_PROFILE_URL} target='_blank'>
+              <button className='btn btn-neutral mx-3'>
                 <IconBrandGithub />
-              </Link>
-            </button>
-            <button className='btn btn-neutral'>
-              <IconFileCv />
-            </button>
+              </button>
+            </Link>
+            <Link to={RESUME_URL} target='_blank'>
+              <button className='btn btn-neutral'>
+                <IconFileCv />
+              </button>
+            </Link>
           </div>
         </div>
       </div>

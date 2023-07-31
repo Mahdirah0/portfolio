@@ -4,7 +4,7 @@ type Props = {
   img: string;
   name: string;
   tech: string[];
-  description: string;
+  description?: string;
   url: string;
   sourceUrl: string;
 };
@@ -31,10 +31,7 @@ export const ShowProjects: React.FC<Props> = ({
           <div className='uppercase tracking-wide text-sm text-indigo-500 font-semibold'>
             {name}
           </div>
-          {/* <h1 className='uppercase tracking-wide font-semibold text-2xl mb-5'>
-            {name}
-          </h1> */}
-          <p className='mt-2 text-slate-500'>{description}</p>
+          {description && <p className='mt-2 text-slate-500'>{description}</p>}
           <div className='mt-2 '>
             <span className=''>Tech stack:</span>
             <div>
@@ -44,16 +41,16 @@ export const ShowProjects: React.FC<Props> = ({
             </div>
           </div>
           <div className='mt-14'>
-            <button className='btn btn-outline btn-xs sm:btn-sm'>
-              <Link to={sourceUrl} target='_blank'>
+            <Link to={sourceUrl} target='_blank'>
+              <button className='btn btn-outline btn-xs sm:btn-sm'>
                 Source Code
-              </Link>
-            </button>
-            <button className='btn btn-neutral btn-xs ml-2 sm:btn-sm'>
-              <Link to={url} target='_blank'>
+              </button>
+            </Link>
+            <Link to={url} target='_blank'>
+              <button className='btn btn-neutral btn-xs ml-2 sm:btn-sm'>
                 Visit Website
-              </Link>
-            </button>
+              </button>
+            </Link>
           </div>
         </div>
       </div>

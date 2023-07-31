@@ -3,6 +3,8 @@ import { HashLink } from 'react-router-hash-link';
 import { IconMenu2 } from '@tabler/icons-react';
 
 export const HamburgerMenu = () => {
+  const linkedInUrl = 'https://www.linkedin.com/in/mahdi-rahman-14383420a/';
+
   return (
     <details className='dropdown dropdown-end'>
       <summary className='btn btn-ghost'>
@@ -23,9 +25,9 @@ export const HamburgerMenu = () => {
           </HashLink>
         </li>
         <li className=''>
-          <HashLink smooth to={'#about'}>
+          <Link className='' to={linkedInUrl} target='_blank'>
             Contact Me
-          </HashLink>
+          </Link>
         </li>
       </ul>
     </details>

@@ -1,9 +1,9 @@
-import { ProjectData } from '../projectData';
+import { PROJECT_DATA } from '../constants';
 import { ShowProjects } from '../components/ShowProjects';
 import { Link } from 'react-router-dom';
 
 export const Projects = () => {
-  const firstThreeProject = ProjectData.slice(0, 3);
+  const firstThreeProject = PROJECT_DATA.slice(0, 3);
 
   return (
     <div id='projects' className='m-auto py-32  flex flex-col items-center'>
@@ -19,15 +19,17 @@ export const Projects = () => {
               tech={item.tech}
               img={item.img}
               description={item.description}
-              url={item.url}
+              url={item.websiteUrl}
               sourceUrl={item.sourceCodeUrl}
             />
           ))}
         </div>
       </div>
-      <button className='btn btn-primary bg-indigo-500 border-none text-white'>
-        <Link to='view-more'>View More</Link>
-      </button>
+      <Link to='view-more'>
+        <button className='btn btn-primary bg-indigo-500 border-none text-white'>
+          View More
+        </button>
+      </Link>
     </div>
   );
 };

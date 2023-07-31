@@ -6,6 +6,12 @@ import {
   IconArrowBadgeUpFilled,
 } from '@tabler/icons-react';
 import { HashLink } from 'react-router-hash-link';
+import {
+  GITHUB_PROFILE_URL,
+  LINKED_IN_PROFILE_URL,
+  RESUME_URL,
+} from '../constants';
+import { Link } from 'react-router-dom';
 
 type Props = {
   morePage?: boolean;
@@ -29,20 +35,26 @@ export const Footer: React.FC<Props> = ({ morePage }) => {
           </div>
         </div>
         <div className='mb-3 sm:mb-0'>
-          <button className='btn btn-neutral'>
-            <HashLink smooth to={'#header'}>
+          <HashLink smooth to={'#header'}>
+            <button className='btn btn-neutral'>
               <IconArrowBadgeUpFilled />
-            </HashLink>
-          </button>
-          <button className='btn btn-neutral'>
-            <IconBrandLinkedin />
-          </button>
-          <button className='btn btn-neutral'>
-            <IconBrandGithub />
-          </button>
-          <button className='btn btn-neutral'>
-            <IconFileCv />
-          </button>
+            </button>
+          </HashLink>
+          <Link to={LINKED_IN_PROFILE_URL} target='_blank'>
+            <button className='btn btn-neutral'>
+              <IconBrandLinkedin />
+            </button>
+          </Link>
+          <Link to={GITHUB_PROFILE_URL} target='_blank'>
+            <button className='btn btn-neutral'>
+              <IconBrandGithub />
+            </button>
+          </Link>
+          <Link to={RESUME_URL} target='_blank'>
+            <button className='btn btn-neutral'>
+              <IconFileCv />
+            </button>
+          </Link>
         </div>
       </div>
     </footer>
