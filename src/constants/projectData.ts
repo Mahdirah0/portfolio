@@ -49,7 +49,7 @@ export const PROJECT_DATA = [
   },
   {
     name: 'Resume Website',
-    img: '',
+    img: 'resume.png',
     tech: ['React', 'Typescript'],
     websiteUrl: 'https://mahdirah0-resume.netlify.app',
     sourceCodeUrl: 'https://github.com/Mahdirah0/resume',
