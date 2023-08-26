@@ -49,10 +49,14 @@ export const Header = () => {
                   <Link to='/'>Home</Link>
                 </li>
                 <li className='mr-5'>
-                  <HashLink to={'#about'}>About</HashLink>
+                  <HashLink smooth to={'/#about'}>
+                    About
+                  </HashLink>
                 </li>
                 <li className='mr-5'>
-                  <HashLink to={'#projects'}>Projects</HashLink>
+                  <HashLink smooth to={'/#projects'}>
+                    Projects
+                  </HashLink>
                 </li>
                 <li>
                   <Link className='' to={LINKED_IN_PROFILE_URL} target='_blank'>

@@ -34,7 +34,7 @@ export const PROJECT_DATA = [
   },
   {
     name: 'Chess',
-    img: '',
+    img: 'chess.png',
     tech: ['HTML', 'CSS', 'Javascript'],
     websiteUrl: 'https://mahdirah0-chess.netlify.app/',
     sourceCodeUrl: 'https://github.com/Mahdirah0/chess/',
@@ -56,10 +56,10 @@ export const PROJECT_DATA = [
   },
   {
     name: 'Personal Portfolio',
-    img: '',
+    img: 'portfolio.png',
     tech: ['React', 'Typescript', 'Responsive'],
-    websiteUrl: '',
-    sourceCodeUrl: '',
+    websiteUrl: 'https://mahdirah0.netlify.app/',
+    sourceCodeUrl: 'https://github.com/Mahdirah0/portfolio',
   },
   {
     name: 'Traveler Landing Website',
@@ -68,12 +68,4 @@ export const PROJECT_DATA = [
     websiteUrl: 'https://mahdirah0-traveler.netlify.app/',
     sourceCodeUrl: 'https://github.com/Mahdirah0/traveler',
   },
-
-  // {
-  //   name: 'Face Recognition',
-  //   img: '',
-  //   tech: ['HTML', 'CSS', 'Javascript'],
-  //   websiteUrl: 'https://mahdirah0-chess.netlify.app/',
-  //   sourceCodeUrl: 'https://github.com/Mahdirah0/chess/',
-  // },
 ];
