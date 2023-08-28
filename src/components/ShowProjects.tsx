@@ -35,8 +35,10 @@ export const ShowProjects: React.FC<Props> = ({
           <div className='mt-2 '>
             <span className=''>Tech stack:</span>
             <div>
-              {tech.map((tech) => (
-                <span className='badge badge-ghost mr-2 my-2'>{tech}</span>
+              {tech.map((tech, idx) => (
+                <span key={idx} className='badge badge-ghost mr-2 my-2'>
+                  {tech}
+                </span>
               ))}
             </div>
           </div>

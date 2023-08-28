@@ -9,7 +9,10 @@ export const MoreProject = () => {
       <Header />
       <div className='flex flex-wrap justify-center pb-52 pt-10'>
         {PROJECT_DATA.map((item) => (
-          <div className='card w-80 bg-base-100 shadow-xl m-5 lg:w-96'>
+          <div
+            key={item.name}
+            className='card w-80 bg-base-100 shadow-xl m-5 lg:w-96'
+          >
             <figure className='h-56'>
               <img src={`/images/${item.img}`} alt={item.name} />
             </figure>
@@ -20,8 +23,10 @@ export const MoreProject = () => {
               <div>
                 <span className=''>Tech stack:</span>
                 <div className='flex flex-wrap'>
-                  {item.tech.map((tech) => (
-                    <span className='badge badge-ghost mr-2 my-2'>{tech}</span>
+                  {item.tech.map((tech, idx) => (
+                    <span key={idx} className='badge badge-ghost mr-2 my-2'>
+                      {tech}
+                    </span>
                   ))}
                 </div>
               </div>
