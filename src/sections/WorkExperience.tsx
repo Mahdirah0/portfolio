@@ -1,6 +1,5 @@
-import { PROJECT_DATA, WORK_EXPERIENCE } from '../constants';
+import { WORK_EXPERIENCE } from '../constants';
 import { ShowProjects } from '../components/ShowProjects';
-import { Link } from 'react-router-dom';
 
 export const WorkExperience = () => {
   return (

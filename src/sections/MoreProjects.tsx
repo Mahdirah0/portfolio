@@ -32,16 +32,20 @@ export const MoreProject = () => {
               </div>
               <div className='card-actions'>
                 <div className='mt-5'>
-                  <Link to={item.sourceCodeUrl} target='_blank'>
-                    <button className='btn btn-outline btn-xs sm:btn-sm'>
-                      Source Code
-                    </button>
-                  </Link>
-                  <Link to={item.websiteUrl} target='_blank'>
-                    <button className='btn btn-neutral btn-xs mx-3 sm:btn-sm'>
-                      Visit Website
-                    </button>
-                  </Link>
+                  {item.sourceCodeUrl && (
+                    <Link to={item.sourceCodeUrl} target='_blank'>
+                      <button className='btn btn-outline btn-xs sm:btn-sm'>
+                        Source Code
+                      </button>
+                    </Link>
+                  )}
+                  {item.websiteUrl && (
+                    <Link to={item.websiteUrl} target='_blank'>
+                      <button className='btn btn-neutral btn-xs mx-3 sm:btn-sm'>
+                        Visit Website
+                      </button>
+                    </Link>
+                  )}
                 </div>
               </div>
             </div>
