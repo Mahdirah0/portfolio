@@ -8,7 +8,7 @@ import {
 import {
   LINKED_IN_PROFILE_URL,
   GITHUB_PROFILE_URL,
-  RESUME_URL,
+  RESUME_PATH,
 } from '../constants';
 
 const HeroStyles = {
@@ -34,7 +34,7 @@ export const Hero = () => {
                 <IconBrandGithub />
               </button>
             </Link>
-            <Link to={RESUME_URL} target='_blank'>
+            <Link to={RESUME_PATH} target='_blank'>
               <button className='btn btn-neutral'>
                 <IconFileCv />
               </button>

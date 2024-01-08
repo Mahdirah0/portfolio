@@ -1,21 +1,13 @@
 import { Link } from 'react-router-dom';
+import { ProjectItem } from '../constants/projectData';
 
-type Props = {
-  img: string;
-  name: string;
-  tech: string[];
-  description?: string;
-  url: string;
-  sourceUrl: string;
-};
-
-export const ShowProjects: React.FC<Props> = ({
+export const ShowProjects: React.FC<ProjectItem> = ({
   name,
   tech,
   img,
   description,
-  sourceUrl,
-  url,
+  sourceCodeUrl,
+  websiteUrl,
 }) => {
   return (
     <div className='max-w-[300px] sm:max-w-md mx-auto mb-24 bg-white rounded-xl shadow-md md:mx-2 md:max-w-4xl 2xl:min-w-[66rem]'>
@@ -43,16 +35,20 @@ export const ShowProjects: React.FC<Props> = ({
             </div>
           </div>
           <div className='mt-14'>
-            <Link to={sourceUrl} target='_blank'>
-              <button className='btn btn-outline btn-xs sm:btn-sm'>
-                Source Code
-              </button>
-            </Link>
-            <Link to={url} target='_blank'>
-              <button className='btn btn-neutral btn-xs ml-2 sm:btn-sm'>
-                Visit Website
-              </button>
-            </Link>
+            {sourceCodeUrl && (
+              <Link to={sourceCodeUrl} target='_blank'>
+                <button className='btn btn-outline btn-xs sm:btn-sm'>
+                  Source Code
+                </button>
+              </Link>
+            )}
+            {websiteUrl && (
+              <Link to={websiteUrl} target='_blank'>
+                <button className='btn btn-neutral btn-xs ml-2 sm:btn-sm'>
+                  Visit Website
+                </button>
+              </Link>
+            )}
           </div>
         </div>
       </div>

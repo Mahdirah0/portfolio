@@ -2,7 +2,7 @@ import { SKILLS } from '../constants';
 
 export const Skills = () => {
   return (
-    <div className='flex flex-col items-center py-32 bg-neutral-100'>
+    <div className='flex flex-col items-center py-32'>
       <h1 className='mb-4 text-4xl font-semibold text-center'>
         Technologies and Tools
       </h1>

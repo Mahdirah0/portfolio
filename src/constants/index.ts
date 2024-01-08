@@ -1,9 +1,9 @@
-export { PROJECT_DATA } from './projectData';
+export { PROJECT_DATA, WORK_EXPERIENCE } from './projectData';
 
 export const GITHUB_PROFILE_URL = 'https://github.com/Mahdirah0';
 export const LINKED_IN_PROFILE_URL =
   'https://www.linkedin.com/in/mahdi-rahman-14383420a/';
-export const RESUME_URL = 'https://mahdirah0-resume.netlify.app/resume.pdf';
+export const RESUME_PATH = '/Mahdi-Rahman-Resume.pdf';
 export const SKILLS = [
   'HTML5',
   'CSS3',

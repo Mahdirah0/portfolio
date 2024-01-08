@@ -9,7 +9,7 @@ import { HashLink } from 'react-router-hash-link';
 import {
   GITHUB_PROFILE_URL,
   LINKED_IN_PROFILE_URL,
-  RESUME_URL,
+  RESUME_PATH,
 } from '../constants';
 import { Link } from 'react-router-dom';
 
@@ -50,7 +50,7 @@ export const Footer: React.FC<Props> = ({ morePage }) => {
               <IconBrandGithub />
             </button>
           </Link>
-          <Link to={RESUME_URL} target='_blank'>
+          <Link to={RESUME_PATH} target='_blank'>
             <button className='btn btn-neutral'>
               <IconFileCv />
             </button>

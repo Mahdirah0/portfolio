@@ -5,6 +5,7 @@ import { About } from './sections/About';
 import { Projects } from './sections/Projects';
 import { Skills } from './sections/Skills';
 import { Footer } from './sections/Footer';
+import { WorkExperience } from './sections/WorkExperience';
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <Hero />
       <About />
+      <WorkExperience />
       <Projects />
       <Skills />
       <Footer />
