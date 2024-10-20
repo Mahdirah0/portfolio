@@ -3,7 +3,23 @@ import { HashLink } from 'react-router-hash-link';
 import { LINKED_IN_PROFILE_URL, RESUME_PATH } from '../constants';
 
 import { useState, useEffect } from 'react';
-import { HamburgerMenu } from './HamburgerMenu';
+import { IconMenu2 } from '@tabler/icons-react';
+// import { HamburgerMenu } from './HamburgerMenu';
+
+const links = [
+  {
+    path: '/',
+    label: 'Home',
+  },
+  {
+    path: '/about',
+    label: 'About',
+  },
+  {
+    path: '/projects',
+    label: 'Projects',
+  },
+];
 
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
@@ -30,42 +46,53 @@ const useWindowDimensions = () => {
   return windowDimensions;
 };
 
+export const HamburgerMenu = () => {
+  const linkedInUrl = 'https://www.linkedin.com/in/mahdi-rahman-14383420a/';
+
+  return (
+    <details className='dropdown dropdown-end'>
+      <summary className='btn btn-ghost'>
+        <IconMenu2 />
+      </summary>
+      <ul className='p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-48 text-black'>
+        {links.map((item) => (
+          <li key={item.label}>
+            <Link to={item.path}>{item.label}</Link>
+          </li>
+        ))}
+        <li>
+          <Link to={RESUME_PATH} target='_blank'>
+            Resume
+          </Link>
+        </li>
+      </ul>
+    </details>
+  );
+};
+
 export const Header = () => {
   const { width } = useWindowDimensions();
 
   return (
-    <header id='header' className='bg-neutral text-white'>
+    <header>
       <div className='flex w-4/5 m-auto items-center justify-between h-24'>
-        <h1 className='text-xl'>
+        <h2 className='text-xl'>
           <Link to='/'>MAHDI RAHMAN</Link>
-        </h1>
+        </h2>
         <div className='flex space-x-5'>
           {width < 635 ? (
             <HamburgerMenu />
           ) : (
             <nav>
               <ul className='flex gap-x-5'>
-                <li>
-                  <Link to='/'>Home</Link>
-                </li>
-                <li>
-                  <HashLink smooth to={'/#about'}>
-                    About
-                  </HashLink>
-                </li>
-                <li>
-                  <HashLink smooth to={'/#projects'}>
-                    Projects
-                  </HashLink>
-                </li>
+                {links.map((item) => (
+                  <li key={item.label}>
+                    <Link to={item.path}>{item.label}</Link>
+                  </li>
+                ))}
                 <li>
                   <Link to={RESUME_PATH} target='_blank'>
                     Resume
-                  </Link>
-                </li>
-                <li>
-                  <Link to={LINKED_IN_PROFILE_URL} target='_blank'>
-                    Contact Me
                   </Link>
                 </li>
               </ul>

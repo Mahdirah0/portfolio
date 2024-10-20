@@ -5,16 +5,21 @@ import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { MoreProject } from './sections/MoreProjects.tsx';
 import { ErrorPage } from './sections/ErrorPage';
+import { HomePage, ProjectsPage } from './pages';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />,
+    element: <HomePage />,
     errorElement: <ErrorPage />,
   },
   {
     path: '/view-more',
     element: <MoreProject />,
+  },
+  {
+    path: '/projects',
+    element: <ProjectsPage />,
   },
 ]);
 
