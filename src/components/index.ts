@@ -1,3 +1,3 @@
-export { HamburgerMenu } from './HamburgerMenu';
-export { Header } from './Header';
-export { ShowProjects } from './ShowProjects';
+export { HamburgerMenu } from './hamburger-menu';
+export { Header } from './header';
+export { ShowProjects } from './show-projects';

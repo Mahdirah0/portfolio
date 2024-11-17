@@ -1,4 +1,4 @@
-export { PROJECT_DATA, WORK_EXPERIENCE } from './projectData';
+export { PROJECT_DATA, WORK_EXPERIENCE } from './project-data';
 
 export const GITHUB_PROFILE_URL = 'https://github.com/Mahdirah0';
 export const LINKED_IN_PROFILE_URL =

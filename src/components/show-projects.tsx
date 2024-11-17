@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ProjectItem } from '../constants/projectData';
+import { ProjectItem } from '../constants/project-data';
 
 export const ShowProjects: React.FC<ProjectItem> = ({
   name,

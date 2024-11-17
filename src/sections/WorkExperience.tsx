@@ -1,5 +1,5 @@
 import { WORK_EXPERIENCE } from '../constants';
-import { ShowProjects } from '../components/ShowProjects';
+import { ShowProjects } from '../components/show-projects';
 
 export const WorkExperience = () => {
   return (

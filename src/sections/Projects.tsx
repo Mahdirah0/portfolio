@@ -1,5 +1,5 @@
 import { PROJECT_DATA } from '../constants';
-import { ShowProjects } from '../components/ShowProjects';
+import { ShowProjects } from '../components/show-projects';
 import { Link } from 'react-router-dom';
 
 export const Projects = () => {

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { Header } from '../components/Header';
-import { PROJECT_DATA } from '../constants/projectData';
+import { Header } from '../components/header';
+import { PROJECT_DATA } from '../constants/project-data';
 import { Footer } from './Footer';
 
 export const MoreProject = () => {
