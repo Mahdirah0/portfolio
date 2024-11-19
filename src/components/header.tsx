@@ -7,10 +7,6 @@ import { IconMenu2 } from '@tabler/icons-react';
 
 const links = [
   {
-    path: '/',
-    label: 'Home',
-  },
-  {
     path: '/about',
     label: 'About',
   },
@@ -46,8 +42,6 @@ const useWindowDimensions = () => {
 };
 
 export const HamburgerMenu = () => {
-  const linkedInUrl = 'https://www.linkedin.com/in/mahdi-rahman-14383420a/';
-
   return (
     <details className='dropdown dropdown-end'>
       <summary className='btn btn-ghost'>
@@ -74,7 +68,7 @@ export const Header = () => {
 
   return (
     <header>
-      <div className='flex w-4/5 m-auto items-center justify-between h-24'>
+      <div className='flex items-center justify-between h-24'>
         <h2 className='text-xl'>
           <Link to='/'>MAHDI RAHMAN</Link>
         </h2>
@@ -83,7 +77,7 @@ export const Header = () => {
             <HamburgerMenu />
           ) : (
             <nav>
-              <ul className='flex gap-x-5'>
+              <ul className='flex space-x-5'>
                 {links.map((item) => (
                   <li key={item.label}>
                     <Link to={item.path}>{item.label}</Link>

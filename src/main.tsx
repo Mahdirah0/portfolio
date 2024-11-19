@@ -2,9 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { MoreProject } from './sections/MoreProjects.tsx';
-import { ErrorPage } from './sections/ErrorPage';
-import { HomePage, ProjectsPage } from './pages';
+import { AboutPage, HomePage, ProjectsPage, ErrorPage } from './pages';
 
 const router = createBrowserRouter([
   {
@@ -13,8 +11,9 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: '/view-more',
-    element: <MoreProject />,
+    path: '/about',
+    element: <AboutPage />,
+    errorElement: <ErrorPage />,
   },
   {
     path: '/projects',
