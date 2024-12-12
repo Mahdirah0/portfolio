@@ -1,3 +1,3 @@
 export const Container = ({ children }: any) => {
-  return <div className='w-4/5 m-auto'>{children}</div>;
+  return <div className='min-h-screen w-4/5 m-auto'>{children}</div>;
 };

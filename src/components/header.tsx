@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import { LINKED_IN_PROFILE_URL, RESUME_PATH } from '../constants';
 
 import { useState, useEffect } from 'react';
-import { IconMenu2 } from '@tabler/icons-react';
 // import { HamburgerMenu } from './HamburgerMenu';
 
 const links = [
@@ -44,9 +43,7 @@ const useWindowDimensions = () => {
 export const HamburgerMenu = () => {
   return (
     <details className='dropdown dropdown-end'>
-      <summary className='btn btn-ghost'>
-        <IconMenu2 />
-      </summary>
+      <summary className='btn btn-ghost'></summary>
       <ul className='p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-48 text-black'>
         {links.map((item) => (
           <li key={item.label}>

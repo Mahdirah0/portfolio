@@ -1,8 +1,20 @@
-import { Container, Header, Headings } from '../components';
+import { Link } from 'react-router-dom';
+import {
+  GithubSvgIcon,
+  Header,
+  Headings,
+  LinkedInSvgIcon,
+  ResumeSvgIcon,
+} from '../components';
+import {
+  GITHUB_PROFILE_URL,
+  LINKED_IN_PROFILE_URL,
+  RESUME_PATH,
+} from '../constants';
 
 export const HomePage = () => {
   return (
-    <Container>
+    <div>
       <Header />
       <div className='text-center w-1/2 m-auto'>
         <div>
@@ -16,12 +28,24 @@ export const HomePage = () => {
           and collaborative teamwork. Excited to make a meaningful impact in
           software development. Email me: mrahman2525@outlook.com
         </p>
-        <div>
-          <button>LinkedIn</button>
-          <button>Github</button>
-          <button>Resume</button>
+        <div className='space-x-3'>
+          <button>
+            <Link to={LINKED_IN_PROFILE_URL} target='_blank'>
+              <LinkedInSvgIcon />
+            </Link>
+          </button>
+          <button>
+            <Link to={GITHUB_PROFILE_URL} target='_blank'>
+              <GithubSvgIcon />
+            </Link>
+          </button>
+          <button>
+            <Link to={RESUME_PATH} target='_blank'>
+              <ResumeSvgIcon />
+            </Link>
+          </button>
         </div>
       </div>
-    </Container>
+    </div>
   );
 };

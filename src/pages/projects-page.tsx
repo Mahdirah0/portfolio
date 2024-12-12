@@ -1,10 +1,10 @@
-import { Container, Header } from '../components';
+import { Header } from '../components';
 
 export const ProjectsPage = () => {
   return (
-    <Container>
+    <div>
       <Header />
       <div></div>
-    </Container>
+    </div>
   );
 };

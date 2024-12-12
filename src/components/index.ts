@@ -3,3 +3,7 @@ export { Header } from './header';
 export { ShowProjects } from './show-projects';
 export { Container } from './container/container';
 export { Headings } from './headings/headings';
+export { ThemeSwitcher } from './theme-switcher';
+export { GithubSvgIcon } from './icons/github-svg-icon';
+export { LinkedInSvgIcon } from './icons/linkedin-svg-icon';
+export { ResumeSvgIcon } from './icons/resume-svg-icon';
