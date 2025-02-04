@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { LINKED_IN_PROFILE_URL, RESUME_PATH } from '../constants';
+import { RESUME_PATH } from '@src/constants';
 
 import { useState, useEffect } from 'react';
 // import { HamburgerMenu } from './HamburgerMenu';
@@ -73,7 +73,7 @@ export const Header = () => {
           {width < 635 ? (
             <HamburgerMenu />
           ) : (
-            <nav>
+            <nav className='flex space-x-5'>
               <ul className='flex space-x-5'>
                 {links.map((item) => (
                   <li key={item.label}>
@@ -86,6 +86,7 @@ export const Header = () => {
                   </Link>
                 </li>
               </ul>
+              <button>Light</button>
             </nav>
           )}
         </div>
