@@ -1,7 +1,7 @@
 export const SkillsSection = () => {
   return (
-    <div>
+    <section>
       <h2>list of skills</h2>
-    </div>
+    </section>
   );
 };

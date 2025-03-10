@@ -4,7 +4,7 @@ interface CustomHeadings extends React.HTMLAttributes<HTMLHeadingElement> {}
 
 const H1 = ({ className, children, ...rest }: CustomHeadings) => {
   return (
-    <h1 className={cn('', className)} {...rest}>
+    <h1 className={cn('text-4xl font-bold', className)} {...rest}>
       {children}
     </h1>
   );
@@ -12,7 +12,7 @@ const H1 = ({ className, children, ...rest }: CustomHeadings) => {
 
 const H2 = ({ className, children, ...rest }: CustomHeadings) => {
   return (
-    <h2 className={cn('', className)} {...rest}>
+    <h2 className={cn('text-xl font-bold', className)} {...rest}>
       {children}
     </h2>
   );

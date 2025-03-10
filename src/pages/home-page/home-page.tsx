@@ -7,13 +7,15 @@ import { SkillsSection } from './sections/skills-section';
 
 export const HomePage = () => {
   return (
-    <div>
+    <>
       <Header />
-      <HeroSection />
-      <AboutSection />
-      <SkillsSection />
-      <ProjectSection />
-      <FooterSection />
-    </div>
+      <div className='space-y-16'>
+        <HeroSection />
+        <AboutSection />
+        <SkillsSection />
+        <ProjectSection />
+        <FooterSection />
+      </div>
+    </>
   );
 };

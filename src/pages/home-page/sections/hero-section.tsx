@@ -13,20 +13,19 @@ import { Link } from 'react-router-dom';
 
 export const HeroSection = () => {
   return (
-    <div className='text-center w-1/2 m-auto'>
-      <div>
-        <Headings.H1 className='text-xl'>
-          Hi there! I'm Mahdi Rahman
-        </Headings.H1>
-        <Headings.H2>Software Developer</Headings.H2>
+    <section className='h-[500px] lg:h-[600px] text-center flex justify-center flex-col space-y-3'>
+      <div className='space-y-3 '>
+        <div>
+          <Headings.H1 className='md:text-8xl'>Hi, I'm Mahdi.</Headings.H1>
+          <Headings.H1 className='md:text-8xl'>
+            A Software Developer.
+          </Headings.H1>
+        </div>
+        <p>
+          I'm passionate about crafting experiences that are engaging,
+          accessible, and user-centric.
+        </p>
       </div>
-      <p>
-        Passionate software developer skilled in JavaScript, Python, React, and
-        TypeScript. Strong problem-solving abilities and eager to turn ideas
-        into functional applications. Committed to continuous learning and
-        collaborative teamwork. Excited to make a meaningful impact in software
-        development. Email me: mrahman2525@outlook.com
-      </p>
       <div className='space-x-3'>
         <button>
           <Link to={LINKED_IN_PROFILE_URL} target='_blank'>
@@ -44,6 +43,6 @@ export const HeroSection = () => {
           </Link>
         </button>
       </div>
-    </div>
+    </section>
   );
 };
