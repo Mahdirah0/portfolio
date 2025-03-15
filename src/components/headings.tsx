@@ -1,10 +1,10 @@
-import { cn } from '../../utils';
+import { cn } from '@src/utils';
 
 interface CustomHeadings extends React.HTMLAttributes<HTMLHeadingElement> {}
 
 const H1 = ({ className, children, ...rest }: CustomHeadings) => {
   return (
-    <h1 className={cn('text-4xl font-bold', className)} {...rest}>
+    <h1 className={cn('text-5xl', className)} {...rest}>
       {children}
     </h1>
   );

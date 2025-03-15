@@ -1,1 +1,3 @@
-export const hoverEffect = 'hover:text-red-500';
+export const hoverEffect = '';
+
+// hover:text-red-500

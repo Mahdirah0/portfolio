@@ -2,7 +2,7 @@ export { HamburgerMenu } from './hamburger-menu';
 export { Header } from './header';
 export { ShowProjects } from './show-projects';
 export { Container } from './container/container';
-export { Headings } from './headings/headings';
+export { Headings } from './headings';
 export { ThemeSwitcher } from './theme-switcher';
 export { GithubSvgIcon } from './icons/github-svg-icon';
 export { LinkedInSvgIcon } from './icons/linkedin-svg-icon';

@@ -2,12 +2,12 @@ import { Headings } from '@src/components';
 
 export const AboutSection = () => {
   return (
-    <section id='#about' className='py-10 rounded-md shadow-2xl p-5'>
+    <section id='#about' className='py-10 rounded-md p-5'>
       <Headings.H2 className='font-bold mb-5'>
         Software Developer solving problems through code, based in London, UK.
       </Headings.H2>
       <p className='mb-2'>
-        I enjoy building efficient, scalable applications and continuouslyk
+        I enjoy building efficient, scalable applications and continuously
         learning new technologies to improve my craft. My focus is on writing
         clean, maintainable code and creating impactful solutions.
       </p>

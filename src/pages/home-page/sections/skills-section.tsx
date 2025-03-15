@@ -1,7 +1,10 @@
+import { Headings } from '@src/components';
+import { Heading } from 'lucide-react';
+
 export const SkillsSection = () => {
   return (
     <section>
-      <h2>list of skills</h2>
+      <Headings.H2>Worked with tons of technologies including</Headings.H2>
     </section>
   );
 };

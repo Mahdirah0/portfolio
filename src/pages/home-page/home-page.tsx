@@ -12,7 +12,7 @@ export const HomePage = () => {
       <div className='space-y-16'>
         <HeroSection />
         <AboutSection />
-        <SkillsSection />
+        {/* <SkillsSection /> */}
         <ProjectSection />
         <FooterSection />
       </div>

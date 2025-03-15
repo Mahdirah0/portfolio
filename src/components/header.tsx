@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
 import { RESUME_PATH } from '@src/constants';
+import { Badge } from './ui/badge';
 
 const links = [
   {
     path: '/',
-    label: 'Mahdi',
+    label: 'Home',
   },
   {
     path: '/#about',
@@ -14,24 +15,22 @@ const links = [
     path: '/projects',
     label: 'Projects',
   },
-  {
-    path: RESUME_PATH,
-    target: '_blank',
-    label: 'Resume',
-  },
+  // {
+  //   path: RESUME_PATH,
+  //   target: '_blank',
+  //   label: 'Resume',
+  // },
 ];
 
 export const Header = () => {
   return (
-    <header>
-      <div className='rounded-md flex justify-center space-x-2 my-10 py-5  shadow-2xl'>
-        <nav className=''>
+    <header className=''>
+      <div className=' flex justify-center space-x-2  py-5'>
+        <nav className='bg-black text-white rounded-3xl m-3 py-3 px-10'>
           <ul className='flex space-x-3 md:space-x-10'>
             {links.map((item) => (
               <li key={item.label}>
-                <Link to={item.path} target={item.target}>
-                  {item.label}
-                </Link>
+                <Link to={item.path}>{item.label}</Link>
               </li>
             ))}
           </ul>

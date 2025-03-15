@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { HomePage, ProjectsPage, ErrorPage } from './pages';
-import { Container } from './components';
 
 const router = createBrowserRouter([
   {
@@ -19,8 +18,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <Container>
-      <RouterProvider router={router} />
-    </Container>
+    <RouterProvider router={router} />
   </React.StrictMode>
 );

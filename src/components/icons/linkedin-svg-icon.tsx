@@ -13,7 +13,7 @@ export const LinkedInSvgIcon = () => {
       stroke-width='2'
       stroke-linecap='round'
       stroke-linejoin='round'
-      className={cn('lucide lucide-linkedin', hoverEffect)}
+      className={cn('mb-1 lucide lucide-linkedin', hoverEffect)}
     >
       <path d='M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z' />
       <rect width='4' height='12' x='2' y='9' />

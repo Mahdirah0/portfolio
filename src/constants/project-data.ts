@@ -1,25 +1,26 @@
 export type ProjectItem = {
-  name: string
-  img: string
-  tech: string[]
-  description?: string
-  websiteUrl?: string
-  sourceCodeUrl?: string
+  name: string;
+  img: string;
+  tech: string[];
+  description?: string;
+  websiteUrl?: string;
+  sourceCodeUrl?: string;
   from?: string;
   to?: string;
-}
+};
 
 export const WORK_EXPERIENCE: ProjectItem[] = [
   {
     name: 'Time Sushi',
-    tech: ["Next.js", "Tanstack Query", "Unit Testing", "Tailwind", "API"],
-    description: "Developed the commercial website using Next.js and Typescript. Showcasing Menu for the restaurant",
-    websiteUrl: "https://www.timesushi.co.uk/",
+    tech: ['Next.js', 'Tanstack Query', 'Unit Testing', 'Tailwind', 'API'],
+    description:
+      'Developed the commercial website using Next.js and Typescript. Showcasing Menu for the restaurant',
+    websiteUrl: 'https://www.timesushi.co.uk/',
     from: 'June 2023',
     to: 'Oct 2023',
-    img: 'timesushi.png'
-  }
-]
+    img: 'timesushi.png',
+  },
+];
 
 export const PROJECT_DATA: ProjectItem[] = [
   {
@@ -70,13 +71,6 @@ export const PROJECT_DATA: ProjectItem[] = [
     websiteUrl: 'https://mahdirah0-london.netlify.app/',
     sourceCodeUrl: 'https://github.com/Mahdirah0/london',
   },
-  // {
-  //   name: 'Resume Website',
-  //   img: 'resume.png',
-  //   tech: ['React', 'Typescript'],
-  //   websiteUrl: 'https://mahdirah0-resume.netlify.app',
-  //   sourceCodeUrl: 'https://github.com/Mahdirah0/resume',
-  // },
   {
     name: 'Personal Portfolio',
     img: 'portfolio.png',
