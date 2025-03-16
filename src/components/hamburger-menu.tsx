@@ -6,7 +6,7 @@ export const HamburgerMenu = () => {
   return (
     <details className='dropdown dropdown-end'>
       <summary className='btn btn-ghost'></summary>
-      <ul className='p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-48 text-black'>
+      <ul className='p-2 shadow-sm menu dropdown-content z-1 bg-base-100 rounded-box w-48 text-black'>
         <li className=''>
           <Link to='/'>Home</Link>
         </li>

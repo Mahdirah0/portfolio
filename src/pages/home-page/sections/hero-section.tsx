@@ -10,11 +10,11 @@ import {
   RESUME_PATH,
 } from '@src/constants';
 import { Link } from 'react-router-dom';
-import { badgeVariants } from '@src/components/ui/badge';
+import { buttonVariants } from '@src/components/ui/button';
 
 const LabelContent = ({ svg: Svg, name }: { svg: any; name: string }) => {
   return (
-    <div className='flex space-x-1 items-center p-1'>
+    <div className='flex space-x-1 align-middle items-center justify-center'>
       <Svg />
       <span>{name}</span>
     </div>
@@ -54,7 +54,7 @@ export const HeroSection = () => {
       <div className='space-x-5 flex justify-center'>
         {heroLinks.map(({ label, path }) => (
           <Link
-            className={badgeVariants({ variant: 'outline' })}
+            className={buttonVariants({ variant: 'outline' })}
             to={path}
             target='_blank'
           >
