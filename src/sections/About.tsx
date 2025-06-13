@@ -11,7 +11,6 @@ export const About = () => {
             and collaborative teamwork. Excited to make a meaningful impact in
             software development.
           </p>
-          <p className='prose lg:prose-xl'>Email: mrahman2525@outlook.com</p>
         </div>
       </div>
     </div>
